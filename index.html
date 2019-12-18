@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    h1{
+        color:red;
+        background-color: greenyellow;   
+    }
+    p{
+        color:white;
+        background-color: black;
+    }
+    .big{
+        font-size: 50px;
+    }
+
+    #dream{
+        font-size :5px;
+        
+    }
+
+    </style>#css 작성가능
 </head>
 <body>
     <h1>저는 차호준입니다.</h1>
     <h2>이것은 부제목입니다 <a href="https://www.naver.com">네이버 바로가기.</a></h2>
-    <p>홍대입구역 역세권 6분거리</p>
+    <p class="big">홍대입구역 역세권 6분거리</p>
+    <p id="dream">제 꿈은 회사 안 다니는 것</p>
+    <div class="big">그냥 한 번 써 봤어요</div>
+    <button id="btn">알림창 표시</button>
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', function(){
+            alert('나를 클릭하셨군요');
+        });
+    </script>
 </body>
 </html>
